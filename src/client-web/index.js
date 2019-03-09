@@ -1,7 +1,7 @@
 import React from 'react'
 import { render } from 'react-dom'
-
-const App = () => <h1>The cheapest stopover</h1>
+import App from './app'
+import './index.css'
 
 const rootEl = document.getElementById('app')
 

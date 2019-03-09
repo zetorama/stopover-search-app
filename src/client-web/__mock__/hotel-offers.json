@@ -1,0 +1,61 @@
+[
+  {
+    "address": {
+      "cityName": "PARIS",
+      "countryCode": "FR",
+      "lines": [
+        "4 ALLEE DU VERGER"
+      ],
+      "postalCode": "95700"
+    },
+    "contact": {
+      "fax": "33-1-30182201",
+      "phone": "33-1-30182200"
+    },
+    "id": "XKCDG0E0",
+    "isAvailable": true,
+    "name": "HOLIDAY INN PARIS CDG AIRPORT",
+    "offers": [
+      {
+        "currency": "USD",
+        "id": "8060D9C4598956A01752F8B0C4CC4F2A80ECBA000D1A6DA49AA86918D36D415A",
+        "roomType": {
+          "bedType": "QUEEN",
+          "beds": 2,
+          "category": "STANDARD_ROOM"
+        },
+        "totalPrice": "79.99"
+      }
+    ]
+  },
+  {
+    "address": {
+      "cityName": "ROISSY CDG CEDEX",
+      "countryCode": "FR",
+      "lines": [
+        "ROISSYPOLE OUEST",
+        "ROUTE DE LA COMMUNE BP 20248"
+      ],
+      "postalCode": "95713"
+    },
+    "contact": {
+      "email": "h0577@accor.com",
+      "fax": "33/1/49192900",
+      "phone": "33/1/49192929"
+    },
+    "id": "RTCDGAIR",
+    "isAvailable": true,
+    "name": "MERCURE PARIS CDG AIRPORT",
+    "offers": [
+      {
+        "currency": "EUR",
+        "id": "D5DE80B70D60BE00543A6AB76640663B1828EFE4660CE2F88D7416EFD63C3E14",
+        "roomType": {
+          "bedType": "DOUBLE",
+          "beds": 1,
+          "category": "STANDARD_ROOM"
+        }
+      }
+    ]
+  }
+]
