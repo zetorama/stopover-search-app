@@ -15,7 +15,10 @@ export const SearchForm = ({
   const onCityCodeChange = useCallback(ev => onChange(ev, 'cityCode', ev.target.value), [onChange])
   const onCheckInDateChange = useCallback(ev => onChange(ev, 'checkInDate', ev.target.value), [onChange])
   const onCheckOutDateChange = useCallback(ev => onChange(ev, 'checkOutDate', ev.target.value), [onChange])
-  const onFormSubmit = useCallback(ev => onSubmit(ev, { cityCode, checkInDate, checkOutDate }), [onSubmit])
+  const onFormSubmit = useCallback(
+    ev => onSubmit(ev, { cityCode, checkInDate, checkOutDate }),
+    [onSubmit, cityCode, checkInDate, checkOutDate],
+  )
 
   return (
     <form className='form-row' role='search' onSubmit={onFormSubmit}>
