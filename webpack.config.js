@@ -1,9 +1,17 @@
+require('dotenv').config()
 const path = require('path')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+const { PORT = 8000 } = process.env
+
 module.exports = {
     devtool: 'source-map',
+    devServer: {
+      proxy: {
+        '/api': `http://localhost:${PORT}`,
+      },
+    },
     entry: './src/client-web/index.js',
     output: {
         path: path.join(__dirname, '/build/client-web'),
