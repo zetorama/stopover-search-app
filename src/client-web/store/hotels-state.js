@@ -11,7 +11,7 @@ export const initState = (initial = {}) => ({
 })
 
 export const reducer = (state, { type, payload = {} }) => {
-  console.debug('%cDISPATCHED', 'color: grey', type, payload)
+  // console.debug('%cDISPATCHED', 'color: grey', type, payload)
 
   switch (type) {
     case 'search-change':
@@ -36,7 +36,7 @@ export const reducer = (state, { type, payload = {} }) => {
         isOffersLoading: false,
         offers: null,
       }
-    case 'offers-done':
+    case 'offers-succeed':
       return {
         ...state,
         offers: payload,
