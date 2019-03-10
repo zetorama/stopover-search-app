@@ -13,6 +13,19 @@ export const Address = ({ lines, cityName, countryCode, postalCode }) => (
   </>
 )
 
+export const RoomType = ({ category, beds, bedType }) => (
+  <>
+    {category}
+    {beds > 0 && (
+      <>
+        {' '}
+        <br className='d-lg-none' />
+        {beds + ' ' + bedType + ' bed' + (beds > 1 ? 's' : '')}
+      </>
+    )}
+  </>
+)
+
 export const Room = ({ totalPrice, currency, roomType }) => (
   <>
     {totalPrice && (
@@ -24,11 +37,7 @@ export const Room = ({ totalPrice, currency, roomType }) => (
         {' '}
       </>
     )}
-    {roomType.category}{' '}
-    <br className='d-lg-none' />
-    {roomType.beds}{' '}
-    {roomType.bedType}
-    {' bed' + (roomType.beds > 1 ? 's' : '')}
+    <RoomType {...roomType} />
   </>
 )
 
