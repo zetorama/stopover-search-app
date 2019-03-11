@@ -1,5 +1,4 @@
-import { fetchOffers } from '../services/hotels'
-
+import { fetchTopOffers } from '../services/hotels'
 
 export const changeSearch = (key, value) => ({
   type: 'search-change',
@@ -33,7 +32,7 @@ export const searchOffers = (filter, params) =>
   async function(dispatch) {
     await dispatch(markLoadingOffers())
     try {
-      const [offers] = await fetchOffers(filter, params)
+      const [offers] = await fetchTopOffers(filter, params)
       dispatch(succeedOffers(offers))
     } catch (err) {
       if (err.name !== 'AbortError') {
