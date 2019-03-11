@@ -1,15 +1,17 @@
 import { useReducer, useCallback } from 'react'
 
-export const wrapDispatch = (dispatch) => async (action) => {
+export const wrapDispatch = (origDispatch) => async function dispatch(action) {
+  console.debug('%cDISPATCHING', 'color:grey', action.type ? [action.type, action.payload] : action)
+
   return typeof action === 'function'
-  ? action(dispatch)
-  : dispatch(await action)
+    ? action(dispatch)
+    : origDispatch(await action)
 }
 
 export function useThunkReducer(reducer, initialArg, init) {
-  const [state, _dispatch] = useReducer(reducer, initialArg, init)
+  const [state, origDispatch] = useReducer(reducer, initialArg, init)
 
-  const dispatch = useCallback(wrapDispatch(_dispatch), [_dispatch])
+  const dispatch = useCallback(wrapDispatch(origDispatch), [origDispatch])
   return [state, dispatch]
 }
 

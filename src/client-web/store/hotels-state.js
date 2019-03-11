@@ -5,7 +5,7 @@ export const initState = (initial = {}) => ({
 
   offers: null,
   offersErrors: null,
-  isOffersLoading: false,
+  loadingCounter: 0,
 
   ...initial,
 })
@@ -24,23 +24,26 @@ export const reducer = (state, { type, payload = {} }) => {
         ...state,
         searchSubmitted: { ...state.search, ...payload },
       }
-    case 'offers-load':
+    case 'offers-loading-mark':
       return {
         ...state,
-        isOffersLoading: true,
+        loadingCounter: state.loadingCounter + 1,
+      }
+    case 'offers-loading-drop':
+      return !state.loadingCounter ? state : {
+        ...state,
+        loadingCounter: state.loadingCounter - 1,
       }
     case 'offers-fail':
       return {
         ...state,
         offersErrors: payload,
-        isOffersLoading: false,
         offers: null,
       }
     case 'offers-succeed':
       return {
         ...state,
         offers: payload,
-        isOffersLoading: false,
         offersErrors: null,
       }
     case 'reset':

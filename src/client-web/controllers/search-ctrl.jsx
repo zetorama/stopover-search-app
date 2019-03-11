@@ -24,15 +24,15 @@ export const SearchCtrl = () => {
   )
 
   useEffect(() => {
+    let abortToken = null
     if (state.searchSubmitted) {
-      actions.searchOffers(state.searchSubmitted)
+      abortToken = new AbortController()
+      actions.searchOffers(state.searchSubmitted, { signal: abortToken.signal })
     }
-    // TODO: cancel request
-    // return () => actions.cancelSearch()
+    return () => {
+      if (abortToken) abortToken.abort()
+    }
   }, [state.searchSubmitted])
-
-  window.sss = state
-  window.ddd = dispatch
 
   return (
     <>
@@ -41,18 +41,19 @@ export const SearchCtrl = () => {
         onChange={onSearchChange}
         onSubmit={onSearchSubmit}
       />
-      <Results {...state} />
+      <Content {...state} />
     </>
   )
 }
 
-export const Results = ({ isOffersLoading, offers, offersErrors }) => isOffersLoading
-  ? <Spiner />
-  : offersErrors
-    ? <Error errors={offersErrors} />
-    : offers
-      ? <SearchResult offers={offers} />
-      : <Welcome />
+export const Content = ({ loadingCounter, offers, offersErrors }) =>
+  loadingCounter
+    ? <Spiner />
+    : offersErrors
+      ? <Error errors={offersErrors} />
+      : offers
+        ? <SearchResult offers={offers} />
+        : <Welcome />
 
 
 export default SearchCtrl

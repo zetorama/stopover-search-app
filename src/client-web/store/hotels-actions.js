@@ -11,8 +11,12 @@ export const submitSearch = ({ cityCode, checkInDate, checkOutDate }) => ({
   payload: { cityCode, checkInDate, checkOutDate },
 })
 
-export const loadOffers = () => ({
-  type: 'offers-load',
+export const markLoadingOffers = () => ({
+  type: 'offers-loading-mark',
+})
+
+export const dropLoadingOffers = () => ({
+  type: 'offers-loading-drop',
 })
 
 export const failOffers = (errors) => ({
@@ -25,13 +29,17 @@ export const succeedOffers = (offers) => ({
   payload: offers,
 })
 
-export const searchOffers = (filter) =>
+export const searchOffers = (filter, params) =>
   async function(dispatch) {
-    await dispatch(loadOffers())
+    await dispatch(markLoadingOffers())
     try {
-      const [offers] = await fetchOffers(filter)
+      const [offers] = await fetchOffers(filter, params)
       dispatch(succeedOffers(offers))
     } catch (err) {
-      dispatch(failOffers(err.errors))
+      if (err.name !== 'AbortError') {
+        dispatch(failOffers(err.errors))
+      }
+    } finally {
+      await dispatch(dropLoadingOffers())
     }
   }
