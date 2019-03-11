@@ -1,10 +1,10 @@
 {
-  "name": "stopover-search",
+  "name": "stopover-search-app",
   "version": "0.1.0",
   "private": true,
   "main": "index.js",
   "scripts": {
-    "start": "node .",
+    "start": "NODE_ENV=production node .",
     "watch": "run-p -l -r watch:*",
     "watch:server": "nodemon -w src/server .",
     "watch:web": "webpack-dev-server --mode development --open --hot",
