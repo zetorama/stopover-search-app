@@ -1,0 +1,218 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`search-form comp renders with all defaults props 1`] = `
+<SearchForm
+  htmlId="1"
+>
+  <form
+    className="form-row"
+    onSubmit={[Function]}
+    role="search"
+  >
+    <div
+      className="form-group col-md-2"
+    >
+      <label
+        className="sr-only"
+        htmlFor="cityCode-1"
+      >
+        City/Airport Code
+      </label>
+      <input
+        className="form-control"
+        id="cityCode-1"
+        maxLength="3"
+        name="cityCode"
+        onChange={[Function]}
+        pattern="[A-Za-z]{3}"
+        placeholder="XYZ"
+        required={true}
+        title="City/Airport Code (XYZ)"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="form-group col-md-4"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <label
+            className="input-group-text"
+            htmlFor="checkInDate-1"
+          >
+            From
+          </label>
+        </div>
+        <input
+          className="form-control"
+          id="checkInDate-1"
+          maxLength="10"
+          name="checkInDate"
+          onChange={[Function]}
+          pattern="\\\\d{4}-\\\\d{2}-\\\\d{2}"
+          placeholder="YYYY-MM-DD"
+          title="Check In Date (YYYY-MM-DD)"
+          type="text"
+          value="2019-03-12"
+        />
+      </div>
+    </div>
+    <div
+      className="form-group col-md-4"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <label
+            className="input-group-text"
+            htmlFor="checkOutDate-1"
+          >
+            To
+          </label>
+        </div>
+        <input
+          className="form-control"
+          id="checkOutDate-1"
+          maxLength="10"
+          name="checkOutDate"
+          onChange={[Function]}
+          pattern="\\\\d{4}-\\\\d{2}-\\\\d{2}"
+          placeholder="YYYY-MM-DD"
+          title="Check Out Date (YYYY-MM-DD)"
+          type="text"
+          value=""
+        />
+      </div>
+    </div>
+    <div
+      className="col-md-2 mb-3"
+    >
+      <button
+        className="btn btn-success btn-block"
+        disabled={false}
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+</SearchForm>
+`;
+
+exports[`search-form comp renders with all passed props 1`] = `
+<SearchForm
+  checkInDate="1111"
+  checkOutDate="2222"
+  cityCode="XXX"
+  htmlId="1"
+>
+  <form
+    className="form-row"
+    onSubmit={[Function]}
+    role="search"
+  >
+    <div
+      className="form-group col-md-2"
+    >
+      <label
+        className="sr-only"
+        htmlFor="cityCode-1"
+      >
+        City/Airport Code
+      </label>
+      <input
+        className="form-control"
+        id="cityCode-1"
+        maxLength="3"
+        name="cityCode"
+        onChange={[Function]}
+        pattern="[A-Za-z]{3}"
+        placeholder="XYZ"
+        required={true}
+        title="City/Airport Code (XYZ)"
+        type="text"
+        value="XXX"
+      />
+    </div>
+    <div
+      className="form-group col-md-4"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <label
+            className="input-group-text"
+            htmlFor="checkInDate-1"
+          >
+            From
+          </label>
+        </div>
+        <input
+          className="form-control"
+          id="checkInDate-1"
+          maxLength="10"
+          name="checkInDate"
+          onChange={[Function]}
+          pattern="\\\\d{4}-\\\\d{2}-\\\\d{2}"
+          placeholder="YYYY-MM-DD"
+          title="Check In Date (YYYY-MM-DD)"
+          type="text"
+          value="1111"
+        />
+      </div>
+    </div>
+    <div
+      className="form-group col-md-4"
+    >
+      <div
+        className="input-group"
+      >
+        <div
+          className="input-group-prepend"
+        >
+          <label
+            className="input-group-text"
+            htmlFor="checkOutDate-1"
+          >
+            To
+          </label>
+        </div>
+        <input
+          className="form-control"
+          id="checkOutDate-1"
+          maxLength="10"
+          name="checkOutDate"
+          onChange={[Function]}
+          pattern="\\\\d{4}-\\\\d{2}-\\\\d{2}"
+          placeholder="YYYY-MM-DD"
+          title="Check Out Date (YYYY-MM-DD)"
+          type="text"
+          value="2222"
+        />
+      </div>
+    </div>
+    <div
+      className="col-md-2 mb-3"
+    >
+      <button
+        className="btn btn-success btn-block"
+        disabled={false}
+        type="submit"
+      >
+        Search
+      </button>
+    </div>
+  </form>
+</SearchForm>
+`;

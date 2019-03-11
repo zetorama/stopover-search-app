@@ -1,0 +1,332 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`hotel-offers comp renders hotel offers 1`] = `
+<HotelOffers
+  offers={
+    Array [
+      Object {
+        "address": Object {
+          "cityName": "PARIS",
+          "countryCode": "FR",
+          "lines": Array [
+            "4 ALLEE DU VERGER",
+          ],
+          "postalCode": "95700",
+        },
+        "contact": Object {
+          "fax": "33-1-30182201",
+          "phone": "33-1-30182200",
+        },
+        "id": "XKCDG0E0",
+        "isAvailable": true,
+        "name": "HOLIDAY INN PARIS CDG AIRPORT",
+        "offers": Array [
+          Object {
+            "currency": "USD",
+            "id": "8060D9C4598956A01752F8B0C4CC4F2A80ECBA000D1A6DA49AA86918D36D415A",
+            "roomType": Object {
+              "bedType": "QUEEN",
+              "beds": 2,
+              "category": "STANDARD_ROOM",
+            },
+            "totalPrice": "79.99",
+          },
+        ],
+      },
+      Object {
+        "address": Object {
+          "cityName": "ROISSY CDG CEDEX",
+          "countryCode": "FR",
+          "lines": Array [
+            "ROISSYPOLE OUEST",
+            "ROUTE DE LA COMMUNE BP 20248",
+          ],
+          "postalCode": "95713",
+        },
+        "contact": Object {
+          "email": "h0577@accor.com",
+          "fax": "33/1/49192900",
+          "phone": "33/1/49192929",
+        },
+        "id": "RTCDGAIR",
+        "isAvailable": true,
+        "name": "MERCURE PARIS CDG AIRPORT",
+        "offers": Array [
+          Object {
+            "currency": "EUR",
+            "id": "D5DE80B70D60BE00543A6AB76640663B1828EFE4660CE2F88D7416EFD63C3E14",
+            "roomType": Object {
+              "bedType": "DOUBLE",
+              "beds": 1,
+              "category": "STANDARD_ROOM",
+            },
+          },
+        ],
+      },
+    ]
+  }
+>
+  <div
+    className="card-group mb-3"
+  >
+    <Hotel
+      address={
+        Object {
+          "cityName": "PARIS",
+          "countryCode": "FR",
+          "lines": Array [
+            "4 ALLEE DU VERGER",
+          ],
+          "postalCode": "95700",
+        }
+      }
+      contact={
+        Object {
+          "fax": "33-1-30182201",
+          "phone": "33-1-30182200",
+        }
+      }
+      id="XKCDG0E0"
+      isAvailable={true}
+      key="XKCDG0E0"
+      name="HOLIDAY INN PARIS CDG AIRPORT"
+      offers={
+        Array [
+          Object {
+            "currency": "USD",
+            "id": "8060D9C4598956A01752F8B0C4CC4F2A80ECBA000D1A6DA49AA86918D36D415A",
+            "roomType": Object {
+              "bedType": "QUEEN",
+              "beds": 2,
+              "category": "STANDARD_ROOM",
+            },
+            "totalPrice": "79.99",
+          },
+        ]
+      }
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-header"
+        >
+          <span
+            title="Available"
+          >
+            ✅
+          </span>
+          <strong>
+            HOLIDAY INN PARIS CDG AIRPORT
+          </strong>
+        </div>
+        <ul
+          className="list-group list-group-flush"
+        >
+          <li
+            className="list-group-item"
+            key="8060D9C4598956A01752F8B0C4CC4F2A80ECBA000D1A6DA49AA86918D36D415A"
+          >
+            <Room
+              currency="USD"
+              id="8060D9C4598956A01752F8B0C4CC4F2A80ECBA000D1A6DA49AA86918D36D415A"
+              roomType={
+                Object {
+                  "bedType": "QUEEN",
+                  "beds": 2,
+                  "category": "STANDARD_ROOM",
+                }
+              }
+              totalPrice="79.99"
+            >
+              <span
+                className="badge badge-success"
+              >
+                USD
+                 
+                79.99
+              </span>
+               
+              <RoomType
+                bedType="QUEEN"
+                beds={2}
+                category="STANDARD_ROOM"
+              >
+                STANDARD_ROOM
+                 
+                <br
+                  className="d-lg-none"
+                />
+                2 QUEEN beds
+              </RoomType>
+            </Room>
+          </li>
+          <li
+            className="list-group-item"
+            title="Contact information"
+          >
+            <Contact
+              fax="33-1-30182201"
+              phone="33-1-30182200"
+            >
+              ☎️
+              +33-1-30182200
+            </Contact>
+          </li>
+          <li
+            className="list-group-item"
+            title="Address"
+          >
+            <Address
+              cityName="PARIS"
+              countryCode="FR"
+              lines={
+                Array [
+                  "4 ALLEE DU VERGER",
+                ]
+              }
+              postalCode="95700"
+            >
+              🏨
+              4 ALLEE DU VERGER
+              <br />
+              PARIS
+               (
+              FR
+              ) 
+              95700
+            </Address>
+          </li>
+        </ul>
+      </div>
+    </Hotel>
+    <Hotel
+      address={
+        Object {
+          "cityName": "ROISSY CDG CEDEX",
+          "countryCode": "FR",
+          "lines": Array [
+            "ROISSYPOLE OUEST",
+            "ROUTE DE LA COMMUNE BP 20248",
+          ],
+          "postalCode": "95713",
+        }
+      }
+      contact={
+        Object {
+          "email": "h0577@accor.com",
+          "fax": "33/1/49192900",
+          "phone": "33/1/49192929",
+        }
+      }
+      id="RTCDGAIR"
+      isAvailable={true}
+      key="RTCDGAIR"
+      name="MERCURE PARIS CDG AIRPORT"
+      offers={
+        Array [
+          Object {
+            "currency": "EUR",
+            "id": "D5DE80B70D60BE00543A6AB76640663B1828EFE4660CE2F88D7416EFD63C3E14",
+            "roomType": Object {
+              "bedType": "DOUBLE",
+              "beds": 1,
+              "category": "STANDARD_ROOM",
+            },
+          },
+        ]
+      }
+    >
+      <div
+        className="card"
+      >
+        <div
+          className="card-header"
+        >
+          <span
+            title="Available"
+          >
+            ✅
+          </span>
+          <strong>
+            MERCURE PARIS CDG AIRPORT
+          </strong>
+        </div>
+        <ul
+          className="list-group list-group-flush"
+        >
+          <li
+            className="list-group-item"
+            key="D5DE80B70D60BE00543A6AB76640663B1828EFE4660CE2F88D7416EFD63C3E14"
+          >
+            <Room
+              currency="EUR"
+              id="D5DE80B70D60BE00543A6AB76640663B1828EFE4660CE2F88D7416EFD63C3E14"
+              roomType={
+                Object {
+                  "bedType": "DOUBLE",
+                  "beds": 1,
+                  "category": "STANDARD_ROOM",
+                }
+              }
+            >
+              <RoomType
+                bedType="DOUBLE"
+                beds={1}
+                category="STANDARD_ROOM"
+              >
+                STANDARD_ROOM
+                 
+                <br
+                  className="d-lg-none"
+                />
+                1 DOUBLE bed
+              </RoomType>
+            </Room>
+          </li>
+          <li
+            className="list-group-item"
+            title="Contact information"
+          >
+            <Contact
+              email="h0577@accor.com"
+              fax="33/1/49192900"
+              phone="33/1/49192929"
+            >
+              ☎️
+              +33-1-49192929
+            </Contact>
+          </li>
+          <li
+            className="list-group-item"
+            title="Address"
+          >
+            <Address
+              cityName="ROISSY CDG CEDEX"
+              countryCode="FR"
+              lines={
+                Array [
+                  "ROISSYPOLE OUEST",
+                  "ROUTE DE LA COMMUNE BP 20248",
+                ]
+              }
+              postalCode="95713"
+            >
+              🏨
+              ROISSYPOLE OUEST
+              <br />
+              ROUTE DE LA COMMUNE BP 20248
+              <br />
+              ROISSY CDG CEDEX
+               (
+              FR
+              ) 
+              95713
+            </Address>
+          </li>
+        </ul>
+      </div>
+    </Hotel>
+  </div>
+</HotelOffers>
+`;
