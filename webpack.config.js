@@ -4,6 +4,12 @@ const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
+if (dotenv.error) {
+  // fallback to defaults, expecting all the neccessary vars are just set in ENV
+  const fallback = require('dotenv').config({ path: path.resolve(process.cwd(), '.env.defaults') })
+  if (!fallback.error) dotenv.parsed = fallback.parsed
+}
+
 const { PORT = 8000 } = process.env
 
 module.exports = {
