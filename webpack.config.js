@@ -1,5 +1,6 @@
-require('dotenv').config()
+const dotenv = require('dotenv').config()
 const path = require('path')
+const webpack = require('webpack')
 const HtmlWebPackPlugin = require('html-webpack-plugin')
 const ExtractTextPlugin = require('extract-text-webpack-plugin')
 
@@ -57,6 +58,15 @@ module.exports = {
       ],
     },
     plugins: [
+        new webpack.DefinePlugin(
+            Object.keys(dotenv.parsed).reduce(
+                (env, key) => Object.assign(
+                    env,
+                    { [`process.env.${key}`]: JSON.stringify(dotenv.parsed[key]) },
+                ),
+                {},
+            )
+        ),
         new HtmlWebPackPlugin({
             hash: true,
             filename: 'index.html',  //target html
