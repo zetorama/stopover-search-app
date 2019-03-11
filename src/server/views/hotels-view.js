@@ -1,18 +1,18 @@
 
-const hotelOfferView = exports.hotelOfferView = ({ available, hotel, offers }) => ({
+const hotelOfferView = exports.hotelOfferView = ({ available, hotel, offers } = {}) => ({
   ...hotelView(hotel),
   isAvailable: available,
-  offers: offers.map(offerView),
+  offers: offers ? offers.map(offerView) : undefined,
 })
 
-const hotelView = exports.hotelView = ({ hotelId, name, contact, address }) => ({
+const hotelView = exports.hotelView = ({ hotelId, name, contact, address } = {}) => ({
   id: hotelId,
   name,
   contact,
   address,
 })
 
-const offerView = exports.offerView = ({ id, price, room }) => ({
+const offerView = exports.offerView = ({ id, price = {}, room = {} } = {}) => ({
   id: id,
   totalPrice: price.total,
   currency: price.currency,
