@@ -2,7 +2,7 @@ import React, { Fragment } from 'react'
 
 export const Contact = ({ phone } = {}) => (
   <>
-    {'☎️'}{phone ? '+' + phone.replace(/\//g, '-') : 'n/a'}
+    {'☎️'}{phone ? (phone[0] === '+' ? '' : '+') + phone.replace(/\//g, '-') : 'n/a'}
   </>
 )
 
