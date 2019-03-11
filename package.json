@@ -8,7 +8,7 @@
     "watch": "run-p -l -r watch:*",
     "watch:server": "nodemon -w src/server .",
     "watch:web": "webpack-dev-server --mode development --open --hot",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -37,6 +37,7 @@
     "css-loader": "^2.1.1",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^24.3.1",
     "nodemon": "^1.18.10",
     "npm-run-all": "^4.1.5",
     "react": "^16.8.4",

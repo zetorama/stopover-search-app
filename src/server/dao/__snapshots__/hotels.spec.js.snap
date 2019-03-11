@@ -1,0 +1,64 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`dao.hotels findOffers() should call API and parse response 1`] = `
+Array [
+  Object {
+    "address": Object {
+      "cityName": "PARIS",
+      "countryCode": "FR",
+      "lines": Array [
+        "7, RUE DE L'HOTEL COLBERT",
+      ],
+      "postalCode": "75005",
+    },
+    "contact": Object {
+      "fax": "33-1-56811902",
+      "phone": "33-1-56811900",
+    },
+    "id": "SMPARCOL",
+    "isAvailable": true,
+    "name": "MELIA COLBERT",
+    "offers": Array [
+      Object {
+        "currency": "EUR",
+        "id": "1EF2CC63B7C2BFDF8EC1C7FBD4DED07F596ADEC6967D5C6E8691F70091BDEF0F",
+        "roomType": Object {
+          "bedType": "TWIN",
+          "beds": 2,
+          "category": "STANDARD_ROOM",
+        },
+        "totalPrice": "220.00",
+      },
+    ],
+  },
+  Object {
+    "address": Object {
+      "cityName": "PARIS",
+      "countryCode": "FR",
+      "lines": Array [
+        "4 RUE DANTON",
+      ],
+      "postalCode": "75006",
+    },
+    "contact": Object {
+      "fax": "+33 1 81690061",
+      "phone": "+33 1 81690060",
+    },
+    "id": "HIPARC12",
+    "isAvailable": true,
+    "name": "HOLIDAY INN PARIS-NOTRE DAME",
+    "offers": Array [
+      Object {
+        "currency": "EUR",
+        "id": "FE76A4D3DC40E607EBCB076AAFA74F0676B7345DE2C804C8010A503BA3D5521E",
+        "roomType": Object {
+          "bedType": "QUEEN",
+          "beds": 1,
+          "category": "STANDARD_ROOM",
+        },
+        "totalPrice": undefined,
+      },
+    ],
+  },
+]
+`;
