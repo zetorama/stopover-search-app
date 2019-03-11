@@ -1,0 +1,262 @@
+[
+  {
+    "type": "hotel-offers",
+    "hotel": {
+      "type": "hotel",
+      "hotelId": "SMPARCOL",
+      "chainCode": "SM",
+      "dupeId": "700029540",
+      "name": "MELIA COLBERT",
+      "rating": "4",
+      "cityCode": "PAR",
+      "latitude": 48.85154,
+      "longitude": 2.34846,
+      "hotelDistance": {
+        "distance": 0.4,
+        "distanceUnit": "KM"
+      },
+      "address": {
+        "lines": [
+          "7, RUE DE L'HOTEL COLBERT"
+        ],
+        "postalCode": "75005",
+        "cityName": "PARIS",
+        "countryCode": "FR"
+      },
+      "contact": {
+        "fax": "33-1-56811902",
+        "phone": "33-1-56811900"
+      },
+      "description": {
+        "lang": "en",
+        "text": "The luxurious and recently renovated Le Colbert Hotel, a magnificent Mansion House of the 19th Century, is strategically located, facing the impressive Cathedral of Notre Dame (500 m) and close to the Quartier Latin (Latin Quarter, 500 m), the famous Louv"
+      },
+      "amenities": [
+        "BAR",
+        "RESTAURANT",
+        "ELEVATOR",
+        "EXCHANGE_FAC",
+        "INT_HOTSPOTS",
+        "WIFI",
+        "LAUNDRY_SVC",
+        "PARKING",
+        "LOUNGE",
+        "AIR_CONDITIONING",
+        "HAIR_DRYER",
+        "MINIBAR",
+        "MOVIE_CHANNELS",
+        "NONSMOKING_RMS",
+        "PC_HOOKUP_INRM",
+        "PHONE-DIR_DIAL",
+        "ROOM_SERVICE",
+        "TELEVISION",
+        "WI-FI_IN_ROOM",
+        "FIRST_AID_STAF",
+        "INT_ROOM_ENTRY",
+        "EMERG_LIGHTING",
+        "FIRE_DETECTORS",
+        "EXTINGUISHERS",
+        "FIRE_SAFETY",
+        "RESTRIC_RM_ACC",
+        "SAFE_DEP_BOX",
+        "SMOKE_DETECTOR",
+        "VIDEO_SURVEIL"
+      ],
+      "media": [
+        {
+          "uri": "http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/8068E4C4D7AB41A3BA9979FAE52F67BF",
+          "category": "EXTERIOR"
+        }
+      ]
+    },
+    "available": true,
+    "offers": [
+      {
+        "id": "1EF2CC63B7C2BFDF8EC1C7FBD4DED07F596ADEC6967D5C6E8691F70091BDEF0F",
+        "rateCode": "BP1",
+        "rateFamilyEstimated": {
+          "code": "BAR",
+          "type": "P"
+        },
+        "commission": {
+          "percentage": "10.0"
+        },
+        "room": {
+          "type": "C2T",
+          "typeEstimated": {
+            "category": "STANDARD_ROOM",
+            "beds": 2,
+            "bedType": "TWIN"
+          },
+          "description": {
+            "lang": "EN",
+            "text": "BAR Prepayment Short\nMELIA TWIN ROOM\nPrivate Bathroom, Mini-bar, Colour TV, Radio,"
+          }
+        },
+        "guests": {
+          "adults": 1
+        },
+        "price": {
+          "currency": "EUR",
+          "total": "220.00",
+          "variations": {
+            "average": {
+              "total": "220.00"
+            },
+            "changes": [
+              {
+                "startDate": "2019-03-11",
+                "endDate": "2019-03-12",
+                "total": "220.00"
+              }
+            ]
+          }
+        },
+        "policies": {
+          "deposit": {
+            "acceptedPayments": {
+              "methods": [
+                "CREDIT_CARD",
+                "ADVANCE_DEPOSIT"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "self": "https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=SMPARCOL"
+  },
+  {
+    "type": "hotel-offers",
+    "hotel": {
+      "type": "hotel",
+      "hotelId": "HIPARC12",
+      "chainCode": "HI",
+      "dupeId": "700132326",
+      "name": "HOLIDAY INN PARIS-NOTRE DAME",
+      "rating": "2",
+      "cityCode": "PAR",
+      "latitude": 48.85254,
+      "longitude": 2.34198,
+      "hotelDistance": {
+        "distance": 0.3,
+        "distanceUnit": "KM"
+      },
+      "address": {
+        "lines": [
+          "4 RUE DANTON"
+        ],
+        "postalCode": "75006",
+        "cityName": "PARIS",
+        "countryCode": "FR"
+      },
+      "contact": {
+        "phone": "+33 1 81690060",
+        "fax": "+33 1 81690061"
+      },
+      "description": {
+        "lang": "en",
+        "text": "This boutique style eco hotel is in the heart of Paris 5 minutes walk from Notre Dame Cathedral and a short stroll from the Louvre museum. Regular RER trains run to Paris Charles de Gaulle Airport and Paris Orly Airport in 30 minutes. It is a 5 minute walk to Saint Michel Notre Dame Metro station for links to company offices on Avenue de France and events at Paris Nord Villepinte Exhibition and Convention Centre. There are 3 air conditioned meeting rooms with wireless Internet which can accommodate up to 55 of your colleagues. You can round off your meeting with cocktails on the roof terrace with panoramic views of Paris. Internet is available 24 hours a day on the 2 computers in the Lobby and there is high speed Internet in all Guest rooms."
+      },
+      "amenities": [
+        "24_HOUR_FRONT_DESK",
+        "24_HOUR_ROOM_SERVICE",
+        "ATM/CASH_MACHINE",
+        "CONFERENCE_FACILITIES",
+        "EXCHANGE_FAC",
+        "EXPRESS_CHECK_IN",
+        "EXPRESS_CHECK_OUT",
+        "ACC_WCHAIR",
+        "ACC_ELEVATORS",
+        "ACC_RM_WCHAIR",
+        "GARAGE_PARKING",
+        "LAUNDRY_SVC",
+        "RESTAURANT",
+        "SAFE_DEP_BOX",
+        "WIRELESS_CONNECTIVITY",
+        "FEMA_FIRE_SAFETY_COMPLIANT",
+        "PHOTOCOPIER",
+        "PRINTER",
+        "AUDIO-VIS_EQT",
+        "BUSINESS_CENTER",
+        "COMPUTER_RENTAL",
+        "LCD/PROJECTOR",
+        "CONFERENCE_SUITE",
+        "CONVENTION_CTR",
+        "MEETING_FACILITIES",
+        "FIRE_SAFETY",
+        "EMERG_LIGHTING",
+        "FIRE_DETECTORS",
+        "SPRINKLERS",
+        "FIRST_AID_STAF",
+        "SECURITY_GUARD",
+        "VIDEO_SURVEIL",
+        "EXTINGUISHERS",
+        "FEMA_FIRE_SAFETY_COMPLIANT"
+      ],
+      "media": [
+        {
+          "uri": "http://uat.multimediarepository.testing.amadeus.com/cmr/retrieve/hotel/39A9137DCEC149B59898A0598BE2C76A",
+          "category": "EXTERIOR"
+        }
+      ]
+    },
+    "available": true,
+    "offers": [
+      {
+        "id": "FE76A4D3DC40E607EBCB076AAFA74F0676B7345DE2C804C8010A503BA3D5521E",
+        "rateCode": "G8A",
+        "rateFamilyEstimated": {
+          "code": "PRO",
+          "type": "P"
+        },
+        "room": {
+          "type": "*1Q",
+          "typeEstimated": {
+            "category": "STANDARD_ROOM",
+            "beds": 1,
+            "bedType": "QUEEN"
+          },
+          "description": {
+            "lang": "EN",
+            "text": "ADVANCE SAVER NO REFUNDS\n1 QUEEN BED LEISURE NONSMOKING RELAX IN A\nCONTEMPORARY DESIGNED ROOM THANKS TO OUR ON"
+          }
+        },
+        "guests": {
+          "adults": 1
+        },
+        "price": {
+          "currency": "EUR",
+          "base": "225.00",
+          "variations": {
+            "average": {
+              "base": "225.00"
+            },
+            "changes": [
+              {
+                "startDate": "2019-03-11",
+                "endDate": "2019-03-12",
+                "base": "225.00"
+              }
+            ]
+          }
+        },
+        "policies": {
+          "deposit": {
+            "acceptedPayments": {
+              "creditCards": [
+                "AX",
+                "VI",
+                "CA"
+              ],
+              "methods": [
+                "CREDIT_CARD"
+              ]
+            }
+          }
+        }
+      }
+    ],
+    "self": "https://test.api.amadeus.com/v2/shopping/hotel-offers/by-hotel?hotelId=HIPARC12"
+  }
+]

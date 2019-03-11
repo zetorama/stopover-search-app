@@ -8,7 +8,7 @@ import Welcome from './welcome'
 import Note from './note'
 import Error from './error'
 
-import offers from '../__mock__/hotel-offers.json'
+import offers from '../../__mock__/hotel-offers.json'
 
 export const Demo = () => (
   <Page>
