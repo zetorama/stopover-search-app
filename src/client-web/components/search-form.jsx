@@ -1,12 +1,13 @@
 import React, { useCallback } from 'react'
 
 const NOOP = () => { }
-const TOMORROW = new Date(Date.now() + 24 * 36e5).toISOString().split('T')[0]
+const localTS = () => Date.now() - new Date().getTimezoneOffset() * 60e3
+const tomorrow = () => new Date(localTS() + 24 * 3600e3).toISOString().split('T')[0]
 let id = Math.random()
 
 export const SearchForm = ({
   cityCode = '',
-  checkInDate = TOMORROW,
+  checkInDate = tomorrow(),
   checkOutDate = '',
   onChange = NOOP,
   onSubmit = NOOP,
