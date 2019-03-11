@@ -15,7 +15,7 @@ module.exports = {
     },
     entry: './src/client-web/index.js',
     output: {
-        path: path.join(__dirname, '/build/client-web'),
+        path: path.join(__dirname, '/build/public'),
         filename: 'index.bundle.js',
     },
     resolve: {

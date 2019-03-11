@@ -8,6 +8,8 @@
     "watch": "run-p -l -r watch:*",
     "watch:server": "nodemon -w src/server .",
     "watch:web": "webpack-dev-server --mode development --open --hot",
+    "build": "webpack --mode production",
+    "coverage": "jest --coverage",
     "test": "jest"
   },
   "repository": {
