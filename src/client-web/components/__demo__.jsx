@@ -4,8 +4,9 @@ import Header from './page-header'
 import Spiner from './spiner'
 import SearchForm from './search-form'
 import SearchResult from './search-result'
-import Welcome from './Welcome'
+import Welcome from './welcome'
 import Note from './note'
+import Error from './error'
 
 import offers from '../__mock__/hotel-offers.json'
 
@@ -21,9 +22,9 @@ export const Demo = () => (
     <hr />
     <SearchResult />
     <hr />
-    <SearchResult errors={[{code: '007', title: 'Mission aborted, James'}]} />
-    <hr />
     <SearchResult offers={offers} />
+    <hr />
+    <Error errors={[{code: '007', title: 'Mission aborted, James'}]} />
     <hr />
     <Note ctx='success'>That's all folks!</Note>
   </Page>
